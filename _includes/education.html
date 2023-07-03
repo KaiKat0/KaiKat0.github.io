@@ -1,0 +1,12 @@
+{% if site.education %}
+    <div class="wrapper">
+        <div class="bg-4 wrapper1">
+            {% for school in site.education %}
+                <h1>{{ school.degree }}<small>  |  {{ school.name }}</small></h1>
+                <h1 class="d-inline-block float-end">{{ school.location }}</h1>
+                <h1 class="d-inline-block">{{ school.timeframe }}</h1>
+                <pre>{{ school.text }}</pre>
+            {% endfor %}
+        </div>
+    </div>
+{% endif %}
